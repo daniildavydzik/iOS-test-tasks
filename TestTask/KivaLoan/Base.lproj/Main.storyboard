@@ -107,9 +107,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="36" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="MCy-uy-qyK">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="36" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="MCy-uy-qyK">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <mapView key="tableHeaderView" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" mapType="standard" id="ZuI-ZM-Qch">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
@@ -165,6 +164,12 @@
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="MCy-uy-qyK" secondAttribute="trailing" id="MlN-kr-gUt"/>
+                            <constraint firstItem="dQy-En-L6I" firstAttribute="top" secondItem="MCy-uy-qyK" secondAttribute="bottom" id="gAe-k4-B2a"/>
+                            <constraint firstItem="MCy-uy-qyK" firstAttribute="leading" secondItem="k4d-AL-MOm" secondAttribute="leading" id="t6f-vy-qLh"/>
+                            <constraint firstItem="MCy-uy-qyK" firstAttribute="top" secondItem="k4d-AL-MOm" secondAttribute="top" id="vfT-z2-yiq"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="mapView" destination="ZuI-ZM-Qch" id="iit-Jt-2EK"/>
